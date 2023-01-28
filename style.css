@@ -7,6 +7,18 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+html {
+    height: web-fill-available;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    height: -web-fill-available;
+    position: absolute;
+}
 .page1
 {
     min-height: 100vh;
