@@ -13,11 +13,10 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
     height: -web-fill-available;
-    position: absolute;
+    position: relative;
 }
 .page1
 {
@@ -180,12 +179,11 @@ section img#mountains_front
     margin-left: 30px;
 }
 .container {
-    width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -279,6 +277,7 @@ section img#mountains_front
     letter-spacing: 1.5px;
     color: #fff;
 }
+/* Media Query */
 @media(max-width: 1160px)
 {
     .container
@@ -327,12 +326,11 @@ section img#mountains_front
     color: #fff;
 }
 .hto-container {
-    width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -341,14 +339,14 @@ section img#mountains_front
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-    display: flex;
-    height: 250px;
+}
+.hto-cardinfo {
     padding: 15px;
     max-width: 365px;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #fff;
-    margin: 10px;
+    position: relative;
 }
 .hto-cardinfo h2{
     font-size: 25px;
@@ -362,7 +360,7 @@ section img#mountains_front
 }
 @media(max-width: 1160px)
 {
-    .container
+    .hto-container
     {
         justify-content: center;
         gap: 40px;
